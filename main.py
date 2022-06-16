@@ -15,6 +15,6 @@ for url in urlList:
 
 time.sleep(10)
 
-discord_webhook.send_msg(ssh=urls[0], vnc=urls[1])
+discord_webhook.send_msg(ssh=urls[1], vnc=urls[0])
 
 driver.quit()
