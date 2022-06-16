@@ -10,8 +10,8 @@ def send_msg(ssh, vnc):
     webhook.set_footer(text='-- thesynthax')
 
     webhook.set_content(title='Raspberry Pi Online', description="Here are the port numbers.")
-    webhook.add_field(name='SSH: ', value=ssh)
-    webhook.add_field(name='VNC: ', value=vnc)
+    webhook.add_field(name='SSH/VNC: ', value="")
+    webhook.add_field(name='-> ', value=ssh + "\n" + vnc)
 
     webhook.send()
 
