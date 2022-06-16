@@ -1,8 +1,16 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 import time
 import discord_webhook
 
-driver = webdriver.Firefox(executable_path='/usr/bin/geckodriver')
+opt = Options()
+opt.add_argument("--disable-infobars")
+opt.add_argument("start-maximized")
+opt.add_argument("--disable-extensions")
+opt.add_argument("--start-maximized")
+opt.headless = True
+opt.add_argument("--headless")
+driver = webdriver.Firefox(executable_path='/usr/bin/geckodriver', options=opt)
 URL = "localhost:4040"
 
 urls = []
@@ -15,6 +23,6 @@ for url in urlList:
 
 time.sleep(10)
 
-discord_webhook.send_msg(ssh=urls[1], vnc=urls[0])
+discord_webhook.send_msg(ssh=urls[0], vnc=urls[1])
 
 driver.quit()
