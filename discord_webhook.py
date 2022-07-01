@@ -1,6 +1,6 @@
 from discord_webhooks import DiscordWebhooks
 
-webhook_url = 'https://discord.com/api/webhooks/986912518159106068/eklOK5k5lAZjveUS-p7Z_ciongoZd-3cDlIEhk4Vk5BJ4GGSfdwi-CRsmojewAo5sysv'
+webhook_url = ''
 
 def send_msg(ssh, vnc):
 
