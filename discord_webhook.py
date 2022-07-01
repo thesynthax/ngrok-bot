@@ -6,14 +6,15 @@ def send_msg(ssh, vnc):
 
     WEBHOOK_URL = webhook_url 
 
-    message = ssh + "\n" + vnc
+    #message = ssh + "\n" + vnc
 
     webhook = DiscordWebhooks(WEBHOOK_URL)
     webhook.set_footer(text='-- thesynthax')
 
     webhook.set_content(title='Raspberry Pi Online', description="Here are the port numbers.")
 
-    webhook.add_field(name='SSH/VNC: ', value=message)
+    webhook.add_field(name='SSH: ', value=ssh)
+    webhook.add_field(name='VNC: ', value=vnc)
 
     webhook.send()
 
