@@ -125,3 +125,88 @@ JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
 1655366873213	geckodriver::marionette	ERROR	Failed to close browser connection: Transport endpoint is not connected (os error 107)
+1655368268561	geckodriver	INFO	Listening on 127.0.0.1:48959
+1655368268577	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileR38aJM"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: X error, error_code=1, request_code=155, minor_code=1 (t=1.72002) [GFX1-]: glxtest: X error, error_code=1, request_code=155, minor_code=1
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: X error, error_code=1, request_code=155, minor_code=1 (t=1.72002) |[1][GFX1-]: glxtest: process failed (exited with status 1) (t=1.7202) [GFX1-]: glxtest: process failed (exited with status 1)
+1655368270396	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileR38aJM/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655368277319	Marionette	INFO	Listening on port 33371
+Read port: 33371
+1655368277530	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655368296048	Marionette	INFO	Stopped listening on port 33371
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+1655368899018	geckodriver	INFO	Listening on 127.0.0.1:60447
+1655368900031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileGrJ39U"
+1655368901710	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGrJ39U/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655368906291	Marionette	INFO	Listening on port 41945
+Read port: 41945
+1655368906433	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655368918355	Marionette	INFO	Stopped listening on port 41945
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655368996659	geckodriver	INFO	Listening on 127.0.0.1:46989
+1655368997693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile20fx8H"
+1655368999413	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile20fx8H/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655369003904	Marionette	INFO	Listening on port 36995
+Read port: 36995
+1655369004042	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655369016496	Marionette	INFO	Stopped listening on port 36995
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655370047330	geckodriver	INFO	Listening on 127.0.0.1:49465
+1655370048343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilesEk4K6"
+1655370049958	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesEk4K6/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655370054402	Marionette	INFO	Listening on port 36249
+Read port: 36249
+1655370054561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655370067150	Marionette	INFO	Stopped listening on port 36249
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+1655370300960	geckodriver	INFO	Listening on 127.0.0.1:52141
+1655370301974	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilefoKsgI"
+1655370303609	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefoKsgI/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655370308158	Marionette	INFO	Listening on port 40853
+Read port: 40853
+1655370308282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655370320909	Marionette	INFO	Stopped listening on port 40853
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655373164708	geckodriver	INFO	Listening on 127.0.0.1:41585
+1655373165722	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile64CvfM"
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: X error, error_code=1, request_code=155, minor_code=1 (t=1.90683) [GFX1-]: glxtest: X error, error_code=1, request_code=155, minor_code=1
+Crash Annotation GraphicsCriticalError: |[0][GFX1-]: glxtest: X error, error_code=1, request_code=155, minor_code=1 (t=1.90683) |[1][GFX1-]: glxtest: process failed (exited with status 1) (t=1.90702) [GFX1-]: glxtest: process failed (exited with status 1)
+1655373167781	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile64CvfM/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+1655373174277	Marionette	INFO	Listening on port 42511
+Read port: 42511
+1655373174407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1655373187497	Marionette	INFO	Stopped listening on port 42511
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1969\"  data: no]"
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
