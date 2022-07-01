@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+import subprocess
 import time
 import discord_webhook
 
@@ -23,6 +24,16 @@ for url in urlList:
 
 time.sleep(10)
 
-discord_webhook.send_msg(ssh=urls[0], vnc=urls[1])
+command = "ssh -l thesynthax 0.tcp.in.ngrok.io -p " + urls[0][-5:]
+output = ""
+try:
+    subprocess.check_output(command, shell=True)
+except subprocess.CalledProcessError as e:
+    print()
+
+if "refused" in output:
+    discord_webhook.send_msg(ssh=urls[1], vnc=urls[0])
+else:
+    discord_webhook.send_msg(ssh=urls[0], vnc=urls[1])
 
 driver.quit()
