@@ -3,17 +3,30 @@ from selenium.webdriver.firefox.options import Options
 import subprocess
 import time
 import discord_webhook
+import requests
 
 opt = Options()
 opt.add_argument("--disable-infobars")
 opt.add_argument("start-maximized")
 opt.add_argument("--disable-extensions")
 opt.add_argument("--start-maximized")
-opt.headless = True
 opt.add_argument("--headless")
-driver = webdriver.Firefox(executable_path='/usr/bin/geckodriver', options=opt)
-URL = "localhost:4040"
+opt.headless = True
 
+driver = webdriver.Firefox(executable_path='/usr/bin/geckodriver', options=opt)
+
+connected = False
+testURL = "google.com"
+while connected == False:
+    try:
+        requests.get(testURL)
+        connected = True
+    except requests.ConnectionError as e:
+        connected = False
+    time.sleep(30)
+
+
+URL = "localhost:4040"
 urls = []
 
 driver.get(URL)
